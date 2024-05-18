@@ -1,0 +1,29 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:           Op Cash Flow   R-squared:                       0.836
+Model:                            OLS   Adj. R-squared:                  0.824
+Method:                 Least Squares   F-statistic:                     69.65
+Date:                Sat, 18 May 2024   Prob (F-statistic):           3.84e-16
+Time:                        10:21:54   Log-Likelihood:                -230.08
+No. Observations:                  45   AIC:                             468.2
+Df Residuals:                      41   BIC:                             475.4
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const        -10.8168     24.864     -0.435      0.666     -61.030      39.397
+Income         0.3848      0.201      1.915      0.062      -0.021       0.791
+EBIT           0.9196      0.219      4.202      0.000       0.478       1.362
+Sales         -0.6973      0.051    -13.737      0.000      -0.800      -0.595
+==============================================================================
+Omnibus:                        0.555   Durbin-Watson:                   2.183
+Prob(Omnibus):                  0.758   Jarque-Bera (JB):                0.124
+Skew:                           0.101   Prob(JB):                        0.940
+Kurtosis:                       3.159   Cond. No.                     5.08e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 5.08e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
