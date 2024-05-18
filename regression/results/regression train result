@@ -1,0 +1,31 @@
+Mean Squared Error: 2885.707324840247
+R-squared: 0.6691105492987601
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:           Op Cash Flow   R-squared:                       0.816
+Model:                            OLS   Adj. R-squared:                  0.799
+Method:                 Least Squares   F-statistic:                     47.45
+Date:                Sat, 18 May 2024   Prob (F-statistic):           6.97e-12
+Time:                        10:24:08   Log-Likelihood:                -183.43
+No. Observations:                  36   AIC:                             374.9
+Df Residuals:                      32   BIC:                             381.2
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -4.5019     26.856     -0.168      0.868     -59.206      50.202
+Income         0.4658      0.226      2.063      0.047       0.006       0.926
+EBIT           0.7508      0.246      3.053      0.005       0.250       1.252
+Sales         -0.6719      0.057    -11.776      0.000      -0.788      -0.556
+==============================================================================
+Omnibus:                        1.502   Durbin-Watson:                   2.307
+Prob(Omnibus):                  0.472   Jarque-Bera (JB):                0.648
+Skew:                          -0.266   Prob(JB):                        0.723
+Kurtosis:                       3.385   Cond. No.                     4.61e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 4.61e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
