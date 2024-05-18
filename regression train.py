@@ -1,10 +1,4 @@
 
-"""This a simple regression with Split the data into training and testing sets
-
-Original file is located at
-    https://colab.research.google.com/drive/1xePZ5hVXI2gHjx8bb6CylTBB6Rjzfgr3
-"""
-
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
