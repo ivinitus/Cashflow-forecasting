@@ -10,7 +10,7 @@ The findings indicate that advanced forecasting models, particularly LSTM and Ra
 
 The study suggests that a Business must effectively utilize these advanced forecasting techniques to optimize its financial resources, withstand adverse economic conditions, and maintain competitive advantage. 
 
-NOTE:
+# NOTE:
 # these results are not 100% accurate.
 # For better model traing some of the original data are mixed with synthetic data.
 # Additional tuning is required to perfect the model.
