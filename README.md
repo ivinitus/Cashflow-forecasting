@@ -13,4 +13,4 @@ The study suggests that a Business must effectively utilize these advanced forec
 NOTE:
 # these results are not 100% accurate.
 # For better model traing some of the original data are mixed with synthetic data.
-# Additional tunings required to prefect the model.
+# Additional tuning is required to perfect the model.
