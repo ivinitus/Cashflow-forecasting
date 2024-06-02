@@ -1,6 +1,6 @@
 # Project-Cashflow-Forecasting
 
-This project aims to improve cash flow forecasting and financial stability. This study highlights the importance of accurate cash flow forecasting for business operations and the role of modern technologies in enhancing forecasting reliability and accuracy. The analysis covers the financial data from 2019 to 2023 and provides insights into cash flow trends and their implications for a business's financial health. 
+This project aims to improve cash flow forecasting and financial stability. This study highlights the importance of accurate cash flow forecasting for business operations and the role of modern technologies in enhancing forecasting reliability and accuracy. The analysis  provides insights into cash flow trends and their implications for a business's financial health. 
 
 The primary objective of the study is to explore the fundamental aspects of cash flow forecasting, identifying the relationship between various financial variables and cash flow projections. By evaluating different forecasting methods, the study aims to recommend effective strategies for mitigating cash flow volatility and improving financial stability. 
 
