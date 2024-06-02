@@ -14,15 +14,11 @@ def load_data(filepath):
 def preprocess_data(data, features, target):
     X = data[features]
     y = data[target]
-    
     X = X.fillna(X.mean())
     y = y.fillna(y.mean())
-    
     scaler = StandardScaler()
     X_scaled = scaler.fit_transform(X)
-    
     X_scaled = sm.add_constant(X_scaled)
-    
     return X_scaled, y
 
 def check_multicollinearity(X):
@@ -55,7 +51,6 @@ def evaluate_model(model, X_test, y_test):
 def plot_results(y_test, y_pred, residuals):
     plt.figure(figsize=(14, 7))
 
-    # Actual vs Predicted Plot
     plt.subplot(1, 2, 1)
     plt.scatter(y_test, y_pred, color='blue', alpha=0.5)
     plt.plot([y_test.min(), y_test.max()], [y_test.min(), y_test.max()], color='red', linewidth=2)
@@ -64,14 +59,12 @@ def plot_results(y_test, y_pred, residuals):
     plt.title('Actual vs Predicted Cash Flow')
     plt.grid(True)
 
-    # Histogram of residuals
     plt.subplot(2, 2, 2)
     plt.hist(residuals, bins=20, color='gray', edgecolor='black', alpha=0.7)
     plt.xlabel('Residuals')
     plt.ylabel('Frequency')
     plt.title('Histogram of Residuals')
 
-    # Q-Q plot for normality
     plt.subplot(2, 2, 4)
     stats.probplot(residuals, dist="norm", plot=plt)
     plt.title('Q-Q Plot of Residuals')
@@ -80,8 +73,7 @@ def plot_results(y_test, y_pred, residuals):
     plt.show()
 
 if __name__ == "__main__":
-    # File path and column definitions
-    filepath = 'cash_flow_data_extended.csv'  # Replace with your actual file path
+    filepath = 'cash_flow_data_extended.csv' 
     features = [
         'Revenue/Sales', 'Total Income', 'Tax', 'Net Profit', 'Accounts Receivable',
         'Accounts Payable', 'EBIT', 'Total Expenditure', 'Interest',
@@ -89,22 +81,12 @@ if __name__ == "__main__":
         'Seasonality', 'Client Payment Trends'
     ]
     target = 'Cash Flow'
-    
-    # Load and preprocess data
+
     data = load_data(filepath)
     X_scaled, y = preprocess_data(data, features, target)
-    
-    # Check for multicollinearity
     check_multicollinearity(X_scaled)
-    
-    # Split data
     X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.2, random_state=0)
-    
-    # Train model
     model = train_model(X_train, y_train)
-    
-    # Evaluate model
     y_pred, residuals = evaluate_model(model, X_test, y_test)
-    
-    # Plot results
+
     plot_results(y_test, y_pred, residuals)
